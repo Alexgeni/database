@@ -1,0 +1,4 @@
+//student(fname ,lname,sir name , title,phone,home phone,email , academic email,id(auto inc),nid,address,gender,did,cgpa,hours,[code,code])
+depart (name,did)
+//course(code,name,hpurs, prerequest,did)
+semester(year,courses,)
