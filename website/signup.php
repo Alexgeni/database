@@ -50,9 +50,9 @@ if(isset($_POST['reg'])){
   if(strlen($_POST['gender'])<3){
     array_push($errors,"Invalid Gender selection");
   }
-  if(strlen($_POST['division'])<3){
-    array_push($errors,"Invalid division selection");
-  }
+  //if($_POST['division'])=="1"){
+  //  array_push($errors,"Invalid division selection");
+  //}
   if(strlen($_POST['address'])<3){
     array_push($errors,"please enter your address");
   }
@@ -98,7 +98,10 @@ if(count($errors)==0){
       '".$_POST['address']."',
       '".$_POST['gender']."',
       '".$_POST['division']."',
-      '4'
+      '4',
+      '0',
+      '0',
+      '0'
     )";
 
     if ($conn->query($sql) === TRUE) {
@@ -147,7 +150,7 @@ if(count($errors)==0){
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Project name</a>
+        <a class="navbar-brand" href="index.php">Project name</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar-right" role="form" method="post" id="login-form">
@@ -228,10 +231,8 @@ if(count($errors)==0){
               <div class="col-sm-6 form-group">
                 <label>Division:</label>
                 <select class="form-control" id="fname" name="division">
-                  <option value="0">Select Division</option>
-                  <option value="Science">Science</option>
-                  <option value="Biology">Biology</option>
-                  <option value="Geology">Geology</option>
+                  <option value="1">Nature science</option>
+                  <option value="2">Biology</option>
               </select>
               </div>
             </div>

@@ -13,7 +13,7 @@ session_destroy();
     $cont= '<h1>Hello, '.$data[0].'!</h1>
     <a class="btn btn-primary btn-lg" href="profile.php" role="button">Profile &raquo;</a></p>';
     $bar='<form class="navbar-form navbar-right" role="form" method="post" id="login-form">
-      <a class="btn btn-primary">'.$data[0].'</a>
+      <a class="btn btn-primary" href="profile.php">'.$data[0].'</a>
       <button type="submit" class="btn btn-danger" id="btn-login" name="btn-logout">sign out</button>
     </form>';
   }
