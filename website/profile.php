@@ -212,7 +212,7 @@ $conn->close();
             }
            ?>
         </dl>
-        <p><a class="btn btn-default" href="#" role="button">Edit &raquo;</a></p>
+        <!--p><a class="btn btn-default" href="#" role="button">Edit &raquo;</a></p-->
       </div>
       <div class="col-md-4">
         <h2>Division</h2>
